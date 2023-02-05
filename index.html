@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Movies Booking App</title>
+    
 
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="App.js" defer></script>
+</head>
+<body>
+
+    <!-- ------------- Navigation Bar  --------- -->
+    <nav class="nav-bar">
+        <div>
+            <h2 class="logo">Movies Booking App</h2>
+        </div>
+        <form action="" id="form">
+            <input type="text" class="search-box" id="search" placeholder="Movie, Actor, Category">
+        </form>
+    </nav>
+
+    <div class="main">
+
+    <!-- ------------- Side Bar  ----------- -->
+        <sidebar class="sidebar">
+            <div class="category-container" id="tag">
+                <div class="tag">Action</div>
+                <div class="tag">Drama</div>
+            </div>
+        </sidebar>
+
+        <!-- ------------- Main content  ----------- -->
+        <div class="container">
+        
+        </div>
+
+          <!----------- Modal content -------->
+
+        <div id="myModal" class="modal">
+
+          
+            <div class="modal-content">
+              <span class="close" onclick=" popClose(this)">&times;</span>
+              <div class="movie-card">
+                <div class="movie-image">
+                  <img src="" id="image" alt="">
+                </div>
+                <div class="movie-details">
+                  <h3 id="title"></h3>
+                      <h3 id="rating"></h3>
+                      <h3 id="language"></h3>
+                      <h3 id="genre"></h3>
+                      <P id="description"></P>
+                </div>
+              </div>
+              <div class="Booking" id="booking">
+               
+            </div>
+            </div>
+           
+          </div>
+        
+    </div>
+</body>
+</html>
