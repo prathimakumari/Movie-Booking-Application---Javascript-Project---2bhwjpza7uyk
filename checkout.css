@@ -3,7 +3,7 @@
     color: white;
 }
 body{
-    background-color: #22254b;
+    background-color: #f0f0f3;
 }
 .navigation{
     background-color: #373b69;
@@ -13,6 +13,7 @@ body{
     color: black;
     margin: 0;
     padding: 0;
+    margin-top: 5rem;
     
 }
 
@@ -20,7 +21,7 @@ body{
     align-items: center;
     text-align: center;
     font-size: 3rem;
-    padding-bottom:10px;
+    padding-bottom:8px;
 }
 a:link{
     text-decoration: none;
@@ -35,18 +36,18 @@ a:visited{
     display: flex;
     /* border: 1px solid black; */
     justify-content: space-evenly;
-    padding-top:20px ;
+    padding-top:30px ;
 
 }
 h2{
     text-align: center;
     padding: 0;
     margin: auto;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 .summary,.paymentMethod{
-    border: 1px solid black;
-    background-color: #373b69;
+    border: 1px solid rgb(75, 70, 70);
+    background-color: #8b7b82;
 }
 .summary{
     width: 25%;
@@ -55,24 +56,24 @@ h2{
     position:static;
 }
 .paymentMethod{
-    width: 50%;
+    width: 90%;
 }
 .summary h3{
     text-align: center;
     font-size: 20px;
 }
 .summary .movie-name, .price, .ticketCount, .fee, .total{
-    padding: 3px;
+    padding: 5px;
 } 
 .summary .movie-name{
-    color: goldenrod;
-    font-size: 20px;
-    text-shadow:1px 1px 1px red;
+    color: rgb(7, 157, 245);
+    font-size: 40px;
+    text-shadow:1px 1px 1px rgb(129, 210, 241);
 }
 .price{
     display: flex;
     justify-content: space-between;
-    margin-right: 5px;
+    margin-right: 8px;
 }
 .ticketCount{
     display: flex;
@@ -80,7 +81,7 @@ h2{
     margin-right: 7px;
 }
 .ticketCount input{
-    color: black;
+    color: rgb(216, 20, 20);
 }
 .fee{
     display: flex;
@@ -94,7 +95,7 @@ h2{
 }
 
 .paymentMethod{
-    padding: 5px;
+    padding: 6px;
     line-height: 0.5;
 }
 form h3{
@@ -104,23 +105,23 @@ form input{
     color: black;
 }
 form button{
-    color: black;
-    width: 95%;
-    border-radius: 7px;
+    color: rgb(158, 225, 245);
+    width: 90%;
+    border-radius: 8px;
     text-align: center;
     cursor: pointer;
 }
 .paymentDetail{
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 7px;
 }
 .paymentDetail div{
     display: flex;
     justify-content: space-evenly;
 }
 .submit{
-    background-color: greenyellow;
+    background-color: rgb(73, 89, 114);
 }
 #inputItem{
     display: flex;
@@ -133,12 +134,12 @@ form button{
       
    }
    #item label{
-       padding: 5px;
+       padding: 3px;
    }
-   @media screen and (max-width: 900px) {
+   @media screen and (max-width: 500px) {
        .ticketCount input {
            color: black;
-           width: 50%;
+           width: 30%;
        }
      }
 
