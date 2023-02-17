@@ -28,9 +28,9 @@ function displayPaymentMethod(){
         <input type="number" id="creditCardNumber"><br>
         <div>
             <label for="expiry">Expiry</label><br>
-            <input type="date" id="expiry"><br>
+            <input type="date" id="expiry" required><br>
             <label for="cvv">CVV</label><br>
-            <input type="password" id="cvv">
+            <input type="password" id="cvv" maxlength="3" required>
         </div>`
     }
 
@@ -42,15 +42,15 @@ function displayPaymentMethod(){
         <input type="number" id="debitCardNumber"><br>
         <div>
             <label for="expiry">Expiry</label><br>
-            <input type="date" id="expiry"><br>
+            <input type="date" id="expiry" required><br>
             <label for="cvv">CVV</label><br>
-            <input type="password" id="cvv">
+            <input type="password" id="cvv" maxlength="3" required>
         </div>`
     }
 
     if(upi.checked){
         paymentDetail.innerHTML=`<label for="upi-id">UPI ID</label><br>
-        <input type="text" id="upi-id" placeholder="xyz@abcbank"><br>
+        <input type="text" id="upi-id" placeholder="xyz@abcbank" required><br>
         <button>Verify UPI ID</button>`
     }
 

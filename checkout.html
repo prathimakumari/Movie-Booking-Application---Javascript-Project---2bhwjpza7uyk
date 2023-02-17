@@ -10,9 +10,7 @@
 
 </head>
 <body>
-    <!-- <div class="back-button">
-        <a href="index.html"><button id="back">Back</button></a>
-    </div> -->
+   
     <h2>Checkout</h2>
     <main class="main">
 
@@ -68,30 +66,15 @@
                     <label for="nameOnCard">Name on card</label><br>
                     <input type="text" id="nameOnCard"><br>
                     <label for="creditCardNumber">Credit Card Number</label><br>
-                    <input type="number" id="creditCardNumber"><br>
+                    <input type="number" id="creditCardNumber" maxlength="16" required><br>
                     <div>
                         <label for="expiry">Expiry</label><br>
                         <input type="date" id="expiry" required><br>
                         <label for="cvv">CVV</label><br>
-                        <input type="password" id="cvv" required>
+                        <input type="password" id="cvv" maxlength="3" required>
                     </div>
 
-                    <!-- debit card -->
-                    <!-- <label for="nameOnCard">Name on card</label><br>
-                    <input type="text" id="nameOnCard"><br>
-                    <label for="debitCardNumber">Debit Card Number</label><br>
-                    <input type="number" id="debitCardNumber"><br>
-                    <div>
-                        <label for="expiry">Expiry</label><br>
-                        <input type="date" id="expiry"><br>
-                        <label for="cvv">CVV</label><br>
-                        <input type="password" id="cvv">
-                    </div> -->
-                    <!-- upi -->
-                    <!-- <label for="upi-id">UPI ID</label>
-                    <input type="text" id="upi-id" placeholder="xyz@abcbank">
-                    <button>Verify UPI ID</button> -->
-                </div>
+                    </div>
                 <button class="submit" id="sumbit">Proceed To Pay</button>
             </form>
         </div>

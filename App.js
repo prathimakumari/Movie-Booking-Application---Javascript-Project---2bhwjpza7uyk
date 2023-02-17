@@ -153,14 +153,13 @@ form.addEventListener("submit", (e) => {
 
   const searTerm = search.value;
 
-  //console.log(searTerm);
+ 
 
   if (searTerm) {
     getMovies(SRCH_URL + "&query=" + searTerm);
   }
 });
 
-// genre setting code
 
 setGenre();
 var selGenre = [];
@@ -220,23 +219,16 @@ function popUp(url, id) {
       document.querySelector(".pop-img").src = IMG_URL + item.poster_path;
 
       document.querySelector(".pop-title").innerText = item.title;
-      //console.log(item.title);
+      
       document.querySelector("#rating-num").innerText = item.vote_average + "/10";
       document.querySelector(".pop-languages").innerText = item.original_language;
       document.querySelector(".pop-dec").innerText = item.overview;
       let price = Math.floor(250 + Math.random() * 300);
       document.querySelector(".price-num").innerHTML = price;
-      // `
-      //      <div id="ticket-container">
-      //               <p id="ticket-price"><span id="price">₹ &nbsp${price}</span></p>
-      //               <button id="buy-button">Buy Ticket</button>
-      //           </div>
-      //           </div>`;
-      //    document.getElementById('price').innerText=price;
+      
       document.querySelector("#booking").innerHTML = `<button class="pop-add-to-cart" id="buy-button">Book Tickets</button>`;
       var genre = item.genre_ids;
-      //    document.getElementById('genre').innerText=item.title;
-     // console.log(item.title);
+     
       document.getElementById('buy-button').addEventListener("click", function() {
         
         window.location.href=`checkout.html?price=${price}&title=${item.title}`;
@@ -244,20 +236,18 @@ function popUp(url, id) {
     }
   }
 }
-// When the user clicks on <span> (x), close the modal
+
 popClose.onclick = ()=> {
   modal.style.display = "none";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
 }
 
-
-// For mobile and Tablet navigation
 
 const mobileIcon = document.querySelector(".menu-icon");
 const sidebar = document.querySelector(".sidebar");

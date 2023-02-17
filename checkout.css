@@ -1,9 +1,9 @@
 *{
     box-sizing: border-box;
-    color: white;
+    color: rgb(248, 244, 244);
 }
 body{
-    background-color: #f0f0f3;
+    background-color: #0e0e11;
 }
 .navigation{
     background-color: #373b69;
@@ -34,7 +34,7 @@ a:visited{
 
 .main{
     display: flex;
-    /* border: 1px solid black; */
+    
     justify-content: space-evenly;
     padding-top:30px ;
 
@@ -47,7 +47,7 @@ h2{
 }
 .summary,.paymentMethod{
     border: 1px solid rgb(75, 70, 70);
-    background-color: #8b7b82;
+    background-color: #461316;
 }
 .summary{
     width: 25%;
